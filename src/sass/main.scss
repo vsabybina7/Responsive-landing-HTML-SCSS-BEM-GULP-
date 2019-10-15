@@ -1,0 +1,10 @@
+
+@import "variables";
+.container {
+  width: 100%;
+  max-width: 1200px;
+}
+@import "mobV320";
+@import "dev640";
+@import "dev980";
+@import "dev1200";

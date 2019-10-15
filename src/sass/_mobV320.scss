@@ -1,0 +1,230 @@
+@import "variables";
+html, body, div, span, h1, p, img, li, menu {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+menu {
+  list-style: none;
+}
+.container {
+  width: 100%;
+  max-width: 320px;
+  margin: 24px auto;
+}
+img {
+  height: auto;
+}
+.headline {
+  background-color:$grey;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+}
+.headline-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.75rem;
+  padding-left: 19px;
+  padding-top: 8px;
+  padding-bottom: 9px;
+    &--white {
+    color:$colorText
+  }
+}
+.headline-icon_640 {
+  display: none;
+}
+.headline-menu{
+  position: absolute;
+  top: 37px;
+  right: 0;
+    &__item{
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.75rem;
+      padding: 9px 94px 8px 11px;
+      color:$grey;
+      background-color: #fff;
+    }
+}
+.headline-menu980 {
+  display: none;
+}
+.headline-icon_980 {
+  display: none;
+}
+.header-background {
+  padding: 19px 133px 90px 20px;
+  background: url(../img/header-bg.png) 50% 50% no-repeat;
+  background-size: cover;
+    &__slogan {
+      width: 62.5%;
+      height: auto;
+      font-family: 'Lato', sans-serif;
+      font-size: 1rem;
+      white-space: pre;
+      line-height: 1.45;
+      color:$colorText;
+    }
+    &__email {
+      display: block;
+      font-family: 'Lato', sans-serif;
+      font-size: 0.875rem;
+      color:$colorEmail;
+    }
+}
+.position-food {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 4px;
+}
+.position-food-item {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 1px;
+  &__text {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 1.25rem;
+    color:$colorText;
+    align-self: center;
+  }
+  &__img {
+    display: block;
+  }
+  &__img640 {
+    display: none;
+  }
+}
+.position-food-item-1 {
+  background: url(../img/pos-food-bg1.png) center 90% no-repeat;
+  background-size: cover;
+    &__text {
+      padding-left: 64px;
+    }
+}
+.position-food-item-2 {
+  background: url(../img/pos-food-bg2.png)center 90% no-repeat;
+  background-size: cover;
+  &__text {
+    padding-left: 75px;
+  }
+}
+.position-food-item-3 {
+  background: url(../img/pos-food-bg3.png)center 15% no-repeat;
+  background-size: cover;
+  &__text {
+    padding-left: 84px;
+  }
+}
+.text-sed{
+  padding-top: 19px;
+  padding-bottom: 5px;
+  &__title{
+    font-family:'Lato', sans-serif;
+    font-size: 1.25rem;
+    color:$grey;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__slogan{
+    font-family:'Lato', sans-serif;
+    font-size: 0.62rem;
+    color: rgba(203, 204, 206, 255);
+    padding-left: 7px;
+  }
+  &__icon {
+    display: none;
+  }
+}
+.text-bg{
+  background-color: $grey;
+  padding: 0.5rem 5.375rem 0.4375rem 1.1875rem;
+  &__mauris{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.125rem;
+    color:$lightGreen;
+    text-transform: uppercase;
+    letter-spacing: 0.0625rem;
+  }
+}
+.id-text {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 18px 12px 18px;
+  &__hendrerit{
+    font-family:'Lato', sans-serif;
+    font-size: 0.93rem;
+    color:$grey;
+    text-transform: uppercase;
+    align-self: center;
+  }
+  &__icon{
+    display: block;
+  }
+  &__icon640 {
+      display: none;
+    }
+  &__icon980{
+    display: none;
+  }
+}
+.list-of-products {
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875rem;
+  color:$grey;
+  width: 89.375%;
+  padding: 0px 18px 6px 18px;
+  &__price {
+    display: flex;
+    justify-content: space-between;
+    &:first-child{
+      align-self: flex-start;
+    }
+    &:last-child {
+      font-weight: bold;
+    }
+  }
+  &__text {
+    padding-top: 5px;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.5625rem;
+    text-align: justify;
+  }
+}
+.bg-green {
+  margin-top: 23px;
+  padding: 7px 77px 8px 18px;
+  background-color: $lightGreen;
+  &__text {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1875rem;
+    color: $colorText;
+    text-transform: uppercase;
+  }
+}
+.footer-bg-green {
+  text-align: center;
+  background-color: $lightGreen;
+  margin-top: 3.0625rem;
+  margin-bottom: 1.375rem;
+  padding-top: 0.625rem;
+  padding-bottom: 0.5625rem;
+  &__text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75rem;
+    color: $colorText;
+    line-height: 1.125rem;
+    white-space: pre;
+  }
+  &__icon {
+    display: none;
+  }
+}
